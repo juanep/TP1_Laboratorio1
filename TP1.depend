@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1536351958 source:c:\users\juan\desktop\prueba\jplib.c
+	<stdio.h>
+	<stdlib.h>
+
+1536351481 source:c:\users\juan\desktop\prueba\main.c
+	<stdio.h>
+	<stdlib.h>
+	"JPlib.h"
+
+1536348021 c:\users\juan\desktop\prueba\jplib.h
+
