@@ -25,7 +25,7 @@ int main()
         printf("\n3.- Calcular todas las operaciones:");
         printf("\n4.- Informar Resultados:");
         printf("\n5.- Salir.");
-        printf("\n\n     Nota: Solo permite el ingreso de numero enteros, positivos: (-32768 a 32767).\n\n");
+        printf("\n\n     Nota: Solo permite el ingreso de numero enteros: (-32768 a 32767).\n\n");
         scanf("%d", &opc);
         switch(opc)
         {
