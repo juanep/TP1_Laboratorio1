@@ -18,28 +18,28 @@ long fact(int x);
  * \param Segundo número ingresado.
  * \return Resultado de la suma.
  */
-int suma(int x, int y);
+int sumar(int x, int y);
 
 /** \brief Calcular la resta de 2 números enteros.
  * \param Primer número ingresado.
  * \param Segundo número ingresado.
  * \return Resultado de la resta.
  */
-int resta(int x, int y);
+int restar(int x, int y);
 
 /** \brief Calcular el producto de 2 números enteros.
  * \param Primer número ingresado.
  * \param Segundo número ingresado.
  * \return Producto resultante.
  */
- int producto(int x, int y);
+ int multiplicar(int x, int y);
 
 /** \brief Calcular el cociente de 2 números enteros.
  * \param Primer número ingresado.
  * \param Segundo número ingresado.
  * \return Cociente resultante.
  */
-float cociente(int x, int y);
+float dividir(int x, int y);
 
 /** \brief Tomar los resultados de las operaciones para informarlos.
  * \param Resultados de las operaciones.
@@ -47,9 +47,4 @@ float cociente(int x, int y);
  */
 void informe(int x, int y, int r1, int r2, int r3, float r4, long r5, long r6);
 
-/** \brief Utilizar un puntero para cambiar el valor de una variable tipo int.
- * \param Puntero a utilizar.
- * \return valor intercambiado de la variable.
- */
-void intercambio(int *x);
 #endif // JPLIB_H_INCLUDED

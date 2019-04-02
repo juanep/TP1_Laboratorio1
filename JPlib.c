@@ -28,28 +28,28 @@ long fact(int x)
     return f;
 }
 
-int suma(int x, int y)
+int sumar(int x, int y)
 {
     int rdo;
     rdo = x + y;
     return rdo;
 }
 
-int resta(int x, int y)
+int restar(int x, int y)
 {
     int rdo;
     rdo = x - y;
     return rdo;
 }
 
- int producto(int x, int y)
+ int multiplicar(int x, int y)
 {
     int rdo;
     rdo = x * y;
     return rdo;
 }
 
-float cociente(int x, int y)
+float dividir(int x, int y)
 {
     float rdo;
     rdo =  x / (float) y;
@@ -89,11 +89,4 @@ void informe(int x, int y, int r1, int r2, int r3, float r4, long r5, long r6)
             }
         }
     }
-}
-
-int intercambio(int *x)
-{
-    int aux;
-    aux = *x;
-    return aux;
 }

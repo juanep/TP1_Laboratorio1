@@ -5,11 +5,11 @@
 
 int main()
 {
-    int s, r, m;
-    float d;
+    int suma, resta, producto;
+    float cociente;
     long factA, factB;
-    int a=0;
-    int b=0;
+    int num1 = 0;
+    int num2 = 0;
     int opc;
     char msj[20]= "Ingrese un numero: ";
     char err[43]= "Error, debe respetar el rango. Reingrese: ";
@@ -20,40 +20,38 @@ int main()
         system("cls");
         printf("\n    --- C A L C U L A D O R A ---   ");
         printf("\n\nSeleccione las opciones en orden ascendente:");
-        printf("\n\n1.- Ingresar Primer Operando: %d", a);
-        printf("\n2.- Ingresar Segundo Operando: %d", b);
+        printf("\n\n1.- Ingresar Primer Operando: %d", num1);
+        printf("\n2.- Ingresar Segundo Operando: %d", num2);
         printf("\n3.- Calcular todas las operaciones:");
         printf("\n4.- Informar Resultados:");
         printf("\n5.- Salir.");
         printf("\n\n     Nota: Solo permite el ingreso de numero enteros: (-32768 a 32767).\n\n");
+        printf("Opcion: ");
         scanf("%d", &opc);
         switch(opc)
         {
             case 1:
-                a = getInt(msj, err, -32768, 32767);
+                num1 = getInt(msj, err, -32768, 32767);
                 band1 = 1;
-                system("cls");
                 break;
             case 2:
-                b = getInt(msj, err, -32768, 32767);
+                num2 = getInt(msj, err, -32768, 32767);
                 band2 = 1;
-                system("cls");
                 break;
             case 3:
-                if(band1==1 && band2==1)
+                if( band1 == 1 && band2 == 1)
                 {
-                    s = suma(a,b);
-                    r = resta(a,b);
-                    m = producto(a,b);
-                    d = cociente(a,b);
-                    factA = fact(a);
-                    factB = fact(b);
+                    suma = sumar(num1,num2);
+                    resta = restar(num1,num2);
+                    producto = multiplicar(num1,num2);
+                    cociente = dividir(num1,num2);
+                    factA = fact(num1);
+                    factB = fact(num2);
                     printf("Operaciones calculadas!\n");
                     bandC= 1;
-                    system("pause");
                 }else
                 {
-                    if(band1==0 || band2==0)
+                    if( band1 == 0 || band2 == 0)
                     {
                         printf("\nFalto ingresar algun operando.\n");
                     }
@@ -62,17 +60,19 @@ int main()
             case 4:
                 if(bandC==1)
                 {
-                    informe(a, b, s, r, m, d, factA, factB);
+                    informe(num1, num2, suma, resta, producto, cociente, factA, factB);
                 }else
                 {
                     printf("\nNo se hicieron los calculos necesarios para dar el informe.\n");
                 }
-                system("pause");
                 break;
             case 5:
-                printf(" Hasta luego!!\n\n");
+                printf("\nHasta luego!!\n\n");
                 break;
+            default:
+                printf("\nOpcion invalida!\n\n");
         }
+        system("pause");
     }while(opc!=5);
     return 0;
 }
